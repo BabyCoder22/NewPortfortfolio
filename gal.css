@@ -1,0 +1,152 @@
+﻿:root {
+    --bg1: url("GODS (1).png");
+    --bg2: url("GODS (2).png");
+    --bg3: url("GODS (6).png");
+    --bg4: url("Sip the Wild, Taste the Adventure (1).png");
+    --bg5: url("Sip the Wild, Taste the Adventure (3).png");
+    --bg6: url("Golide clan (2).png");
+    --bg7: url("Golide clan (1).png");
+    --bg8: url("Golide clan (3).png");
+    --bg9: url("Unleash the Bold, Savor the Gold (1).png");
+    --bg10: url("Your paragraph text (1).png");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+.box-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 10px;
+    width: 100%;
+    max-width: 1100px;
+    height: 90vh;
+    max-height: 900px;
+    padding: 1rem;
+    margin: 0 auto;
+}
+
+    .box-container .box {
+        width: 25%;
+        height: 500px;
+        border-radius: 25px;
+        cursor: pointer;
+        transition: width 0.5s ease-in-out;
+        position: relative;
+        overflow: hidden;
+    }
+
+        .box-container .box:nth-child(1) {
+            background: var(--bg1);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: auto 200%;
+        }
+
+        .box-container .box:nth-child(2) {
+            background: var(--bg2);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: auto 200%;
+        }
+
+        .box-container .box:nth-child(3) {
+            background: var(--bg3);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: auto 200%;
+        }
+
+        .box-container .box:nth-child(4) {
+            background: var(--bg4);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: auto 200%;
+        }
+
+        .box-container .box:nth-child(5) {
+            background: var(--bg5);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: auto 200%;
+        }
+
+        .box-container .box:nth-child(6) {
+            background: var(--bg6);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: auto 200%;
+        }
+
+        .box-container .box:nth-child(7) {
+            background: var(--bg7);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: auto 200%;
+        }
+
+        .box-container .box:nth-child(8) {
+            background: var(--bg8);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: auto 200%;
+        }
+
+        .box-container .box:nth-child(9) {
+            background: var(--bg9);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: auto 200%;
+        }
+
+        .box-container .box:nth-child(10) {
+            background: var(--bg10);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: auto 200%;
+        }
+
+
+        .box-container .box .overlay {
+            opacity: 0;
+        }
+
+        .box-container .box.closed {
+            width: 5%;
+        }
+
+            .box-container .box.closed .overlay {
+                opacity: 1;
+            }
+
+        .box-container .box.expanded {
+            width: 85%;
+        }
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    transition: 0.5s ease;
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6));
+}
